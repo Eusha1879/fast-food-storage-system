@@ -11,7 +11,7 @@ flowchart TD
     classDef opBox fill:#111827,stroke:#10b981,stroke-width:1.5px,color:#f9fafb,rx:6px,ry:6px
 
     %% Main Header
-    TITLE["🍔 FAST FOOD STORAGE SYSTEM"]:::header
+    TITLE["FAST FOOD STORAGE SYSTEM"]:::header
 
     %% Steps Flow
     TITLE --> S1["📋 1. REQUIREMENTS ANALYSIS"]:::process
