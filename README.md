@@ -1,85 +1,89 @@
 # fast-food-storage-system
 CCT Algorithms and Constructs CA1 — Java-based Fast Food Storage System using OOP, Stack/Queue data structures, validation, testing, time complexity analysis, and GitHub version control.
-# 🍔 Fast Food Storage System
 
-## 📘 CCT College Dublin — Algorithms and Constructs CA1
+flowchart TD
 
-This project is developed for the **Algorithms and Constructs CA1** module at CCT College Dublin.
+    A["🍔 FAST FOOD STORAGE SYSTEM<br/>CCT CA1 - Algorithms & Constructs"]
 
-The aim of the project is to design and develop a Java application that models a fast-food storage system using an appropriate data structure and Object-Oriented Programming principles.
+    A --> B["1️⃣ Requirements Analysis"]
+    B --> B1["Maximum capacity = 8 trays"]
+    B --> B2["Store name, weight, best-before date, added time"]
+    B --> B3["Add / Remove / Peek / Search / Display / Exit"]
 
----
+    B --> C["2️⃣ Data Structure Selection"]
 
-## 🎯 Project Scenario
+    C --> C1["Choose suitable structure"]
+    C --> C2["Explain why it fits the scenario"]
+    C --> C3["Analyse time complexity"]
 
-A fast-food restaurant stores different food items such as:
+    C --> D["3️⃣ Java + OOP Design"]
 
-- Burger
-- Pizza
-- Fries
-- Sandwich
-- Hotdog
+    D --> D1["FoodItem.java"]
+    D --> D2["FoodStack.java"]
+    D --> D3["StorageService.java"]
+    D --> D4["FoodValidator.java"]
+    D --> D5["Main.java"]
 
-The storage unit can hold a maximum of **8 trays**.
+    D1 --> D11["name : String"]
+    D1 --> D12["weight : double"]
+    D1 --> D13["bestBeforeDate : LocalDate"]
+    D1 --> D14["addedTime : LocalDateTime"]
 
-Each food item stores:
+    D --> E["4️⃣ Data Structure Operations"]
 
-- Food name
-- Weight in grams
-- Best-before date
-- Time the item was added to storage
+    E --> E1["push() / add()"]
+    E --> E2["pop() / remove()"]
+    E --> E3["peek()"]
+    E --> E4["search()"]
+    E --> E5["display()"]
+    E --> E6["isEmpty()"]
+    E --> E7["isFull()"]
 
-The system must support adding, removing, displaying, peeking, searching and exiting the application.
+    E --> F["5️⃣ Validation + Error Handling"]
 
----
+    F --> F1["Reject invalid weight"]
+    F --> F2["Reject invalid best-before date"]
+    F --> F3["Prevent more than 8 trays"]
+    F --> F4["Handle empty storage"]
+    F --> F5["Handle invalid menu input"]
 
-# 🧠 Main Concepts Covered
+    F --> G["6️⃣ Testing"]
 
-## Java
-- Classes and Objects
-- Constructors
-- Encapsulation
-- Interfaces
-- Inheritance
-- Exception Handling
-- LocalDate
-- LocalDateTime
-- Methods
-- Input Validation
+    G --> G1["Valid input tests"]
+    G --> G2["Invalid input tests"]
+    G --> G3["Full storage test"]
+    G --> G4["Empty storage test"]
+    G --> G5["Search test"]
 
-## Data Structures and Algorithms
-- Stack
-- Queue concepts
-- Push
-- Pop
-- Peek
-- Search
-- Display
-- Big-O Time Complexity
-- Linear Search
+    G --> H["7️⃣ Time Complexity Analysis"]
 
----
+    H --> H1["Add"]
+    H --> H2["Remove"]
+    H --> H3["Peek"]
+    H --> H4["Search"]
+    H --> H5["Display"]
 
-# 🏗️ Planned Project Structure
+    H --> I["8️⃣ GitHub"]
 
-```text
-FastFoodStorageSystem
-│
-└── src
-    │
-    └── com.cct.fastfood
-        │
-        ├── model
-        │   └── FoodItem.java
-        │
-        ├── structure
-        │   └── FoodStack.java
-        │
-        ├── service
-        │   └── StorageService.java
-        │
-        ├── validation
-        │   └── FoodValidator.java
-        │
-        └── app
-            └── Main.java
+    I --> I1["Create repository"]
+    I --> I2["Meaningful commits"]
+    I --> I3["5-8 commits per member"]
+    I --> I4["Give lecturer repository access"]
+    I --> I5["Add GitHub link to poster"]
+
+    I --> J["9️⃣ Poster + Video"]
+
+    J --> J1["400-500 word poster"]
+    J --> J2["Problem explanation"]
+    J --> J3["Data structure explanation"]
+    J --> J4["Advantages + limitations"]
+    J --> J5["GitHub commit screenshots"]
+    J --> J6["Recorded explanation"]
+
+    J --> K["🔟 Final Submission"]
+
+    K --> K1["Java Project"]
+    K --> K2["PPT Poster"]
+    K --> K3["Video Link"]
+    K --> K4["GitHub Link"]
+    K --> K5["AI Use Word Document"]
