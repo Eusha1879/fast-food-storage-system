@@ -14,9 +14,9 @@ flowchart TD
     TITLE["FAST FOOD STORAGE SYSTEM"]:::header
 
     %% Steps Flow
-    TITLE --> S1["📋 1. REQUIREMENTS ANALYSIS"]:::process
-    S1 --> S2["📊 2. DATA STRUCTURE SELECTION"]:::process
-    S2 --> S3["☕ 3. JAVA + OOP DESIGN"]:::process
+    TITLE --> S1[" REQUIREMENTS ANALYSIS"]:::process
+    S1 --> S2["DATA STRUCTURE SELECTION"]:::process
+    S2 --> S3["JAVA + OOP DESIGN"]:::process
 
     %% Step 3: OOP Components
     subgraph OOP_DESIGN [" "]
