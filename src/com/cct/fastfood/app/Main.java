@@ -1,11 +1,11 @@
 package com.cct.fastfood.app;
-import com.cct.fastfood.model.Fooditem;
+import com.cct.fastfood.model.FoodItem;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args){
         // Create a FoodItem Object
-        Fooditem burger = new Fooditem("Burger",250.0,
+        FoodItem burger = new FoodItem("Burger",250.0,
                 LocalDate.now().plusDays(7),LocalDateTime.now());
         // testing Getters
         System.out.println("Name: "+burger.getName());

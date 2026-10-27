@@ -2,15 +2,15 @@
 package com.cct.fastfood.model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-public class Fooditem {
+public class FoodItem {
     //Private Data
     private String name;
     private double weight;
     private LocalDate bestBeforeDate;
     private LocalDateTime addedTime;
     //constructor - (area)
-    public Fooditem(String name,double weight,LocalDate bestBeforeDate,
-    LocalDateTime addedTime){
+    public FoodItem(String name, double weight, LocalDate bestBeforeDate,
+                    LocalDateTime addedTime){
         this.name = name;
         this.weight=weight;
         this.bestBeforeDate=bestBeforeDate;
