@@ -52,7 +52,7 @@ public class FoodValidator {
         }
 
         LocalDate today = LocalDate.now();
-        LocalDate maximumDate = today.plusDays(11);
+        LocalDate maximumDate = today.plusDays(14);
 
         if (bestBeforeDate.isBefore(today)) {
             throw new IllegalArgumentException(
@@ -62,7 +62,7 @@ public class FoodValidator {
 
         if (bestBeforeDate.isAfter(maximumDate)) {
             throw new IllegalArgumentException(
-                    "Best-before date cannot exceed 11 days."
+                    "Best-before date cannot exceed 14 days."
             );
         }
     }

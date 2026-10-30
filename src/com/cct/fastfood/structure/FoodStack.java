@@ -88,7 +88,7 @@ public class FoodStack {
         return -1;
     }
 
-    // DISPLAY: Show all stored food - O(n)
+    //  Showing all the stored food - O(n)
     public void display() {
 
         if (isEmpty()) {
