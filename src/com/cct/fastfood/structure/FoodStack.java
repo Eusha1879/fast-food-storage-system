@@ -1,8 +1,6 @@
 
 package com.cct.fastfood.structure;
-
 import com.cct.fastfood.model.FoodItem;
-
 public class FoodStack {
 
     private static final int CAPACITY = 8;
@@ -122,3 +120,4 @@ public class FoodStack {
         return CAPACITY;
     }
 }
+

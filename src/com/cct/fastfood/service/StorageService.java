@@ -1,10 +1,8 @@
 
 package com.cct.fastfood.service;
-
 import com.cct.fastfood.model.FoodItem;
 import com.cct.fastfood.structure.FoodStack;
 import com.cct.fastfood.validation.FoodValidator;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -24,7 +22,7 @@ public class StorageService {
 
         if (storage.isFull()) {
             throw new IllegalStateException(
-                    "Storage full! Cannot add more food."
+                    "Storage full! Cannot add more food. Maximum 8 Trays. "
             );
         }
 

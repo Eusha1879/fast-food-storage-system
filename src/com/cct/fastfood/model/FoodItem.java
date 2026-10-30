@@ -33,8 +33,11 @@ public class FoodItem {
 
     @Override
     public String toString(){
-        return "\n--Name : " + name + "\n-- Weight : " + weight + "\n--Best Before Date : "+
-                bestBeforeDate + "\n--The Added Time :  ; " + addedTime;
+        return "\n--Name : "
+                + name + "\n-- Weight : "
+                + weight + "\n--Best Before Date : " +
+                bestBeforeDate + "\n--The Added Time :  ; "
+                + addedTime;
     }
 
 }

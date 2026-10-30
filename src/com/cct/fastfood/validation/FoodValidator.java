@@ -8,7 +8,7 @@ public class FoodValidator {
 
     private static final Set<String> ALLOWED_FOODS =
             Set.of("Burger", "Pizza", "Fries",
-                    "Sandwich", "Hotdog");
+                    "Sandwich", "Beef Biriyani");
 
     // Check valid food name
     public static void validateName(String name) {
@@ -26,7 +26,7 @@ public class FoodValidator {
         if (!valid) {
             throw new IllegalArgumentException(
                     "Only Burger, Pizza, Fries, "
-                            + "Sandwich and Hotdog are allowed."
+                            + "Sandwich and Beef Biriyani  are allowed."
             );
         }
     }
@@ -36,7 +36,7 @@ public class FoodValidator {
 
         if (!Double.isFinite(weight) || weight <= 0) {
             throw new IllegalArgumentException(
-                    "Weight must be a positive number."
+                    "Weight must be a positive number eg 100,250,300, can't be : -100,-250."
             );
         }
     }
@@ -47,22 +47,22 @@ public class FoodValidator {
 
         if (bestBeforeDate == null) {
             throw new IllegalArgumentException(
-                    "Best-before date is required."
+                    "Best-before date is needed ."
             );
         }
 
         LocalDate today = LocalDate.now();
-        LocalDate maximumDate = today.plusDays(14);
+        LocalDate maximumDate = today.plusDays(11);
 
         if (bestBeforeDate.isBefore(today)) {
             throw new IllegalArgumentException(
-                    "Best-before date cannot be in the past."
+                    "Best-before date cannot be in the Previous Dates."
             );
         }
 
         if (bestBeforeDate.isAfter(maximumDate)) {
             throw new IllegalArgumentException(
-                    "Best-before date cannot exceed 14 days."
+                    "Best-before date cannot exceed 11 days."
             );
         }
     }
