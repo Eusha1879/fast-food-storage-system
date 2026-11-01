@@ -31,7 +31,7 @@ public class FoodValidator {
         }
     }
 
-    // Check weight
+    // Check weight make sure it's also a positive number
     public static void validateWeight(double weight) {
 
         if (!Double.isFinite(weight) || weight <= 0) {
